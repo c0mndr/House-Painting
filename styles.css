@@ -1,0 +1,172 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: skyblue;
+}
+#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: wheat;
+  border: 2px solid darkslategray;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+body::after {
+  content: "";
+  width: 100vw;
+  height: 30vh;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  background-color: greenyellow;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+body::before {
+  content: "";
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  z-index: -1;
+  top: -150px;
+  left: -150px;
+  border-radius: 100%;
+  background-color: yellow;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#house div {
+  position: absolute;
+}
+#chimney {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  border: 2px solid darkslategray;
+  top: -103px;
+  right: 70px;
+  z-index: 1;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#chimney::after {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 20px;
+  background-color: brown;
+  z-index: 2;
+  border: 2px solid darkslategray;
+  left: -10px;
+  top: -10px;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+.smoke {
+  position: absolute;
+  background-color: darkslategray;
+  border-radius: 100%;
+  z-index: -1;
+  box-shadow: inset 0 0 20px #3333338f;
+  filter: blur(10px);
+}
+#big-smoke {
+  width: 70px;
+  height: 50px;
+  top: -50px;
+  right: 5px;
+}
+#medium-smoke {
+  width: 30px;
+  height: 25px;
+  top: -60px;
+  right: 50px;
+}
+#small-smoke {
+  width: 30px;
+  height: 23px;
+  top: -70px;
+  right: 30px;
+}
+#roof {
+  width: 498px;
+  height: 100px;
+  background-color: brown;
+  border: 2px solid darkslategray;
+  top: 0;
+  box-shadow: inset 0 -20px 20px #3333338f;
+}
+#window-1,
+#window-2 {
+  width: 100px;
+  height: 100px;
+  box-shadow: inset 0 0 20px #3333338f;
+  background-color: azure;
+}
+#window-1 {
+  border: 2px solid darkslategray;
+  top: 150px;
+  left: 100px;
+}
+#window-1::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: darkslategray;
+  top: 0;
+  left: 50px;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#window-1::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: darkslategray;
+  top: 50px;
+  left: 0;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#window-2 {
+  border: 2px solid darkslategray;
+  top: 150px;
+  left: 300px;
+}
+#window-2::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: darkslategray;
+  top: 0;
+  left: 50px;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#window-2::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: darkslategray;
+  top: 50px;
+  left: 0;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#door {
+  width: 70px;
+  height: 100px;
+  background-color: burlywood;
+  border: 2px solid darkslategray;
+  bottom: 0;
+  left: 220px;
+  box-shadow: inset 0 0 20px #3333338f;
+}
+#door-handle {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgb(87, 22, 22);
+  border-radius: 50%;
+  top: 50px;
+  right: 10px;
+  box-shadow: inset 0 0 20px #3333338f;
+}
