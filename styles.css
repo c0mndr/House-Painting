@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: skyblue;
+  overflow: hidden;
 }
 #house {
   position: relative;
@@ -16,10 +17,10 @@ body {
 body::after {
   content: "";
   width: 100vw;
-  height: 30vh;
+  height: 35vh;
   position: absolute;
   z-index: -1;
-  bottom: 0;
+  bottom: -50px;
   background-color: greenyellow;
   box-shadow: inset 0 0 20px #3333338f;
 }
